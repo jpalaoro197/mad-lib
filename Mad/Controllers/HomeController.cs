@@ -5,6 +5,9 @@ namespace Mad.Controllers
   public class HomeController : Controller
   {
 
+    [Route("/")]
+    public ActionResult HomePage() {return View(); }
+    
     [Route("/form")]
     public ActionResult Form() { return View(); }
 
